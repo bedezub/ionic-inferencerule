@@ -1,0 +1,14 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Inference Rule</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-title class="container">{{result}} because</ion-title>
+  <b><div class="container2" [innerHTML]="prove"></div></b>
+  <button class="container2" style="margin-top: 50px;" ion-button block (click)="send()">Dismiss</button>
+</ion-content>

@@ -1,0 +1,40 @@
+<!-- Written by Dr. Zub -->
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+          Inference Rule
+        </ion-title>
+      </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-title id="title">Statement 2</ion-title>
+    <div id="container">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+              <h6 id="text">If</h6>
+          </ion-col>
+          <ion-col col-10>
+              <ion-item id="rounded">
+                  <ion-input type="text" placeholder="{{q}}" readonly="true"></ion-input>
+                </ion-item> 
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+              <h6 id="text">Then</h6>
+          </ion-col>
+          <ion-col col-10>
+              <ion-item id="rounded">
+                  <ion-input type="text" placeholder="Statement 2" [(ngModel)]="r"></ion-input>
+                </ion-item> 
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <button ion-button block (click)="send()">Submit</button>
+      </div>
+</ion-content>

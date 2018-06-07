@@ -1,0 +1,25 @@
+<!-- Written by Dr. Zub -->
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+          Inference Rule
+        </ion-title>
+      </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <div id="container">
+      <ion-title id="title">Hypothesis</ion-title>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+              <ion-item id="rounded">
+                  <ion-input type="text" placeholder="Hypothesis" [(ngModel)]="p"></ion-input>
+                </ion-item> 
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+      <button ion-button block (click)="send()">Submit</button>
+    </div>
+</ion-content>

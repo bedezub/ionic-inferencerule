@@ -1,0 +1,25 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Inference Rule</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  <ion-content padding>
+    <ion-list>
+      <ion-item no-lines id="input">p: <span style="padding-right: 10px;"></span>{{p}}</ion-item>
+      <ion-item no-lines>q: <span style="padding-right: 10px;"></span>{{q}}</ion-item>
+      <ion-item no-lines>r: <span style="padding-right: 10px;"></span>{{r}}</ion-item>
+      <ion-item no-lines id="input">s: <span style="padding-right: 10px;"></span>{{s}}</ion-item>
+    </ion-list>
+  
+    <div>
+      <h6 id="text">q</h6>
+      <h6 id="text2">q &#8594; r</h6><h6 class="mode">(Mode Ponens)</h6>
+      <h6 id="text">_____________________</h6>
+      <h6 id="text">r</h6>
+    </div>
+  
+    <button ion-button block (click)="send()">Next</button>
+  
+  </ion-content>
